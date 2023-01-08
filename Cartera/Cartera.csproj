@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
+    <PackageReference Include="MySqlConnector" Version="0.67.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
+    <PackageReference Include="Utilidades" Version="1.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Conexiones">
+      <HintPath>C:\Users\Javier\Desktop\Pendiente\Conexiones.dll</HintPath>
+    </Reference>
+    <Reference Include="ModelCartera">
+      <HintPath>..\ModelCartera\bin\Debug\netstandard2.0\ModelCartera.dll</HintPath>
+    </Reference>
+    <Reference Include="Utilidades">
+      <HintPath>E:\Panama\Netcore5\Utilidades\bin\Debug\netstandard2.0\Utilidades.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="client_secre.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>JAVIER VILLALBA ESPINOSA</Authors>
+    <Company>Grupo Smart Time Sas</Company>
+    <Description>Clase para Contabilidad</Description>
+    <Copyright>2020</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ModelAdmin\ModelAdmin.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Conexiones">
+      <HintPath>C:\Users\Javier\Desktop\Pendiente\Conexiones.dll</HintPath>
+    </Reference>
+    <Reference Include="ModelContabilidad">
+      <HintPath>..\ModelContabilidad\bin\Debug\netstandard2.0\ModelContabilidad.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

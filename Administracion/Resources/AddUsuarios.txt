@@ -1,0 +1,33 @@
+INSERT INTO usuarios (
+	Id,
+	IdUsuario,
+	NombreUsuario,
+	Clave,
+	CorreoElectronico,
+	IdRol,
+	Firma,
+	Autorizacion,
+	FechaOperacion,
+	UsuarioAutoriza,
+	Estado,
+	FechaModificacion,
+	UsuarioModifica,
+	Skin 
+)
+VALUES
+	(
+		@Id,
+		@IdUsuario,
+		@NombreUsuario,
+		PASSWORD ( @Clave ),
+		@CorreoElectronico,
+		@IdRol,
+		@Firma,
+		@Autorizacion,
+		@FechaOperacion,
+		@UsuarioAutoriza,
+		@Estado,
+		@FechaModificacion,
+		@UsuarioModifica,
+	@Skin 
+	)

@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Conexiones">
+      <HintPath>C:\Users\Javier\Desktop\Pendiente\Conexiones.dll</HintPath>
+    </Reference>
+    <Reference Include="ModelAdmin">
+      <HintPath>..\ModelAdmin\bin\Debug\netstandard2.0\ModelAdmin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="RscAdmin.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RscAdmin.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="RscAdmin.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RscAdmin.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

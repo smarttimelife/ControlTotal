@@ -1,0 +1,22 @@
+[
+  {
+    "Id": 1,
+    "Pais": "Colombia",
+    "Conexion": "server=181.205.29.226; Uid=root;Password=elpobladosa;database=promocion; Port=3306; SslMode=none;"
+  },
+  {
+    "Id": 2,
+    "Pais": "Panama",
+    "Conexion": "server=201.221.224.203; Uid=root;Password=elpobladosa;database=promocion; Port=3306; SslMode=none;"
+  },
+  {
+    "Id": 3,
+    "Pais": "Peru",
+    "Conexion": "server=201.221.224.203; Uid=root;Password=elpobladosa;database=promocion; Port=3308; SslMode=none;"
+  },
+  {
+    "Id": 4,
+    "Pais": "Local",
+    "Conexion": "server=127.0.0.1; Uid=root;Password=elpobladosa;database=promocion; Port=3307; SslMode=none;"
+  }
+]

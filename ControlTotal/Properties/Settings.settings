@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ControlTotal.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Ip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3.16.137.42</Value>
+    </Setting>
+    <Setting Name="BaseDatos" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="Puerto" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

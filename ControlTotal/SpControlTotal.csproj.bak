@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A0C4975-C5AB-4CD0-BC5D-ECD966B94B7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ControlTotal</RootNamespace>
+    <AssemblyName>ControlTotal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Public\Cartera\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\3.16.137.42\Cartera\</UpdateUrl>
+    <ProductName>Control Total</ProductName>
+    <PublisherName>Grupo Smart Time Sas</PublisherName>
+    <SuiteName>Control Total</SuiteName>
+    <MinimumRequiredVersion>2021.3.3.3</MinimumRequiredVersion>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>2021.8.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Administracion\Resources\Menu General.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F817D5BA4660C9BAD2E2BDE25250AF43736C2585</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SpControlTotal_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Conexiones">
+      <HintPath>C:\Users\Javier\Desktop\Pendiente\Conexiones.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.1.Drawing, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Export, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.1.UI, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.1.Extensions, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v21.1.Core.Desktop, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Google.Apis, Version=1.45.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.45.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.45.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.45.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.45.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.45.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.45.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.45.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v2, Version=1.45.0.1922, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v2.1.45.0.1922\lib\net45\Google.Apis.Drive.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v3, Version=1.45.0.1922, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v3.1.45.0.1922\lib\net45\Google.Apis.Drive.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.45.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.45.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.12.3.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.12.3\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Extensions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Extensions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.3.1.4\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.0\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.3.1.5\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.5\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.3.1.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.3.1.5\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.3.1.5\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.3.1.5\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.5\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.3.1.5\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.1.5\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.5\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.3.1.4\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Physical.3.1.4\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.3.1.4\lib\netstandard2.0\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Hosting.Abstractions.3.1.4\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.3.1.5\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.1.5\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.1.5\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.5\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers, Version=2.2.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.Headers.2.2.8\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="ModelAdmin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ModelAdmin\bin\Debug\netstandard2.0\ModelAdmin.dll</HintPath>
+    </Reference>
+    <Reference Include="ModelCartera">
+      <HintPath>..\ModelCartera\bin\Debug\netstandard2.0\ModelCartera.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.20\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFrameworkCore, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.EntityFrameworkCore.8.0.20\lib\netstandard2.0\MySql.Data.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=0.67.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.0.67.0\lib\net461\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Pomelo.JsonObject, Version=2.2.1.0, Culture=neutral, PublicKeyToken=2cc498582444921b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pomelo.JsonObject.2.2.1\lib\netstandard2.0\Pomelo.JsonObject.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.7.1\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Interactive.Async, Version=4.1.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Interactive.Async.4.1.1\lib\net461\System.Interactive.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.4.7.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Async, Version=4.1.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Async.4.1.1\lib\net461\System.Linq.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.20\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.20\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion\MenuGeneral\Program.cs" />
+    <Compile Include="Clases\BaseViewModel.cs" />
+    <Compile Include="Clases\GoogleDocDriveV3.cs" />
+    <Compile Include="Clases\OperCalculos.cs" />
+    <Compile Include="Cartera\Proyectos\XtraModuloInmuebles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Proyectos\XtraModuloInmuebles.Designer.cs">
+      <DependentUpon>XtraModuloInmuebles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\GoogleDoc.cs" />
+    <Compile Include="Cartera\Reportes\RptAdjudicacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\RptAdjudicacion.Designer.cs">
+      <DependentUpon>RptAdjudicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Reportes\RptComision.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\RptComision.Designer.cs">
+      <DependentUpon>RptComision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Reportes\RptOtrosi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\RptOtrosi.Designer.cs">
+      <DependentUpon>RptOtrosi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Operaciones.cs" />
+    <Compile Include="Cartera\Reportes\RptEstadoCuenta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\RptEstadoCuenta.Designer.cs">
+      <DependentUpon>RptEstadoCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Reportes\RptReciboCaja.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\RptReciboCaja.Designer.cs">
+      <DependentUpon>RptReciboCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserAdjudicacion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserAdjudicacion.Designer.cs">
+      <DependentUpon>UserAdjudicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GrillaCapital.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GrillaCapital.Designer.cs">
+      <DependentUpon>GrillaCapital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GrillaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GrillaControl.Designer.cs">
+      <DependentUpon>GrillaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GrillaCuota.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GrillaCuota.Designer.cs">
+      <DependentUpon>GrillaCuota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleDriveFiles\Ppruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoogleDriveFiles\Ppruebas.Designer.cs">
+      <DependentUpon>Ppruebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\MenuGeneral\XtraMenuGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\MenuGeneral\XtraMenuGeneral.Designer.cs">
+      <DependentUpon>XtraMenuGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\ModuloXtraFactores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\ModuloXtraFactores.Designer.cs">
+      <DependentUpon>ModuloXtraFactores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\MenuGeneral\Utilidades.cs" />
+    <Compile Include="Configuracion\XtraFactores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\XtraFactores.Designer.cs">
+      <DependentUpon>XtraFactores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\MenuGeneral\XtraLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\MenuGeneral\XtraLogin.Designer.cs">
+      <DependentUpon>XtraLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraTerceros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraTerceros.Designer.cs">
+      <DependentUpon>XtraTerceros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraModuloEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraModuloEmpresas.Designer.cs">
+      <DependentUpon>XtraModuloEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraModuloUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraModuloUsuarios.Designer.cs">
+      <DependentUpon>XtraModuloUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraUsuarios.Designer.cs">
+      <DependentUpon>XtraUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraEmpresas.Designer.cs">
+      <DependentUpon>XtraEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraModuloRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraModuloRoles.Designer.cs">
+      <DependentUpon>XtraModuloRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraUsuarioProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraUsuarioProyectos.Designer.cs">
+      <DependentUpon>XtraUsuarioProyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraReasignarClaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraReasignarClaves.Designer.cs">
+      <DependentUpon>XtraReasignarClaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraRoles.Designer.cs">
+      <DependentUpon>XtraRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Proyectos\XtraInmuebles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Proyectos\XtraInmuebles.Designer.cs">
+      <DependentUpon>XtraInmuebles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Reportes\RptSimulador.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\RptSimulador.Designer.cs">
+      <DependentUpon>RptSimulador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptSimulador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptSimulador.Designer.cs">
+      <DependentUpon>XtraRptSimulador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Proyectos\XtraSimulador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Proyectos\XtraSimulador.Designer.cs">
+      <DependentUpon>XtraSimulador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraModuloReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraModuloReservas.Designer.cs">
+      <DependentUpon>XtraModuloReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraReservas.Designer.cs">
+      <DependentUpon>XtraReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\MenuGeneral\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\MenuGeneral\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserAsesores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserAsesores.Designer.cs">
+      <DependentUpon>UserAsesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraAdjudicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraAdjudicacion.Designer.cs">
+      <DependentUpon>XtraAdjudicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleDriveFiles\XtraWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoogleDriveFiles\XtraWeb.Designer.cs">
+      <DependentUpon>XtraWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleDriveFiles\XtraDocx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoogleDriveFiles\XtraDocx.Designer.cs">
+      <DependentUpon>XtraDocx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleDriveFiles\XtraImagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoogleDriveFiles\XtraImagen.Designer.cs">
+      <DependentUpon>XtraImagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleDriveFiles\XtraPdf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoogleDriveFiles\XtraPdf.Designer.cs">
+      <DependentUpon>XtraPdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptAdjudicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptAdjudicacion.Designer.cs">
+      <DependentUpon>XtraRptAdjudicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraModuloRadicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraModuloRadicacion.Designer.cs">
+      <DependentUpon>XtraModuloRadicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraRadicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraRadicacion.Designer.cs">
+      <DependentUpon>XtraRadicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptComision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptComision.Designer.cs">
+      <DependentUpon>XtraRptComision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraModuloOtrosi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraModuloOtrosi.Designer.cs">
+      <DependentUpon>XtraModuloOtrosi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraOtrosi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraOtrosi.Designer.cs">
+      <DependentUpon>XtraOtrosi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraFuentePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraFuentePago.Designer.cs">
+      <DependentUpon>XtraFuentePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraModuloRecaudosVigentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraModuloRecaudosVigentes.Designer.cs">
+      <DependentUpon>XtraModuloRecaudosVigentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraRecaudos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraRecaudos.Designer.cs">
+      <DependentUpon>XtraRecaudos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptOtrosi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptOtrosi.Designer.cs">
+      <DependentUpon>XtraRptOtrosi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Proyectos\XtraCalculoCuotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Proyectos\XtraCalculoCuotas.Designer.cs">
+      <DependentUpon>XtraCalculoCuotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserDatosClientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserDatosClientes.Designer.cs">
+      <DependentUpon>UserDatosClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraRecaudoDetallado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraRecaudoDetallado.Designer.cs">
+      <DependentUpon>XtraRecaudoDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptEstadoCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptEstadoCuenta.Designer.cs">
+      <DependentUpon>XtraRptEstadoCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraModuloRecaudoJuridico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraModuloRecaudoJuridico.Designer.cs">
+      <DependentUpon>XtraModuloRecaudoJuridico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraRcdJuridico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraRcdJuridico.Designer.cs">
+      <DependentUpon>XtraRcdJuridico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraRcdNoRadicado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraRcdNoRadicado.Designer.cs">
+      <DependentUpon>XtraRcdNoRadicado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraRecaudoFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraRecaudoFecha.Designer.cs">
+      <DependentUpon>XtraRecaudoFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptReciboCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Reportes\XtraRptReciboCaja.Designer.cs">
+      <DependentUpon>XtraRptReciboCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comisiones\XtraAnticiposPendientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comisiones\XtraAnticiposPendientes.Designer.cs">
+      <DependentUpon>XtraAnticiposPendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comisiones\XtraComisionesPendientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comisiones\XtraComisionesPendientes.Designer.cs">
+      <DependentUpon>XtraComisionesPendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comisiones\XtraConfigAnticipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comisiones\XtraConfigAnticipos.Designer.cs">
+      <DependentUpon>XtraConfigAnticipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comisiones\XtraPagoAnticipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comisiones\XtraPagoAnticipos.Designer.cs">
+      <DependentUpon>XtraPagoAnticipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comisiones\XtraPagoComision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comisiones\XtraPagoComision.Designer.cs">
+      <DependentUpon>XtraPagoComision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presupuesto\XtraAddPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presupuesto\XtraAddPresupuesto.Designer.cs">
+      <DependentUpon>XtraAddPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presupuesto\XtraRangoCartera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presupuesto\XtraRangoCartera.Designer.cs">
+      <DependentUpon>XtraRangoCartera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presupuesto\XtraSeguimientoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presupuesto\XtraSeguimientoCliente.Designer.cs">
+      <DependentUpon>XtraSeguimientoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presupuesto\XtraSeguimientoPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presupuesto\XtraSeguimientoPresupuesto.Designer.cs">
+      <DependentUpon>XtraSeguimientoPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presupuesto\XtraCnsSeguimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presupuesto\XtraCnsSeguimientos.Designer.cs">
+      <DependentUpon>XtraCnsSeguimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presupuesto\XtraCnsPresupuestoPeriodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presupuesto\XtraCnsPresupuestoPeriodo.Designer.cs">
+      <DependentUpon>XtraCnsPresupuestoPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comisiones\XtraCnsComisionFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comisiones\XtraCnsComisionFecha.Designer.cs">
+      <DependentUpon>XtraCnsComisionFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comisiones\XtraCnsComisionGestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comisiones\XtraCnsComisionGestor.Designer.cs">
+      <DependentUpon>XtraCnsComisionGestor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraCnsRecaudoJuridico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraCnsRecaudoJuridico.Designer.cs">
+      <DependentUpon>XtraCnsRecaudoJuridico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraCnsRecaudoNoRadicados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Recaudos\XtraCnsRecaudoNoRadicados.Designer.cs">
+      <DependentUpon>XtraCnsRecaudoNoRadicados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentacion\XtraPagados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentacion\XtraPagados.Designer.cs">
+      <DependentUpon>XtraPagados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentacion\XtraDocumentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentacion\XtraDocumentacion.Designer.cs">
+      <DependentUpon>XtraDocumentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentacion\XtraArchivados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentacion\XtraArchivados.Designer.cs">
+      <DependentUpon>XtraArchivados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentacion\XtraEscriturados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentacion\XtraEscriturados.Designer.cs">
+      <DependentUpon>XtraEscriturados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentacion\XtraTramiteEscritura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentacion\XtraTramiteEscritura.Designer.cs">
+      <DependentUpon>XtraTramiteEscritura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentacion\XtraAceptarDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentacion\XtraAceptarDocumento.Designer.cs">
+      <DependentUpon>XtraAceptarDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraModuloAdjudicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraModuloAdjudicaciones.Designer.cs">
+      <DependentUpon>XtraModuloAdjudicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\XtraModuloOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\XtraModuloOficina.Designer.cs">
+      <DependentUpon>XtraModuloOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\XtraOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\XtraOficina.Designer.cs">
+      <DependentUpon>XtraOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraModuloSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraModuloSesion.Designer.cs">
+      <DependentUpon>XtraModuloSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraModuloTerceros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Configuracion\XtraModuloTerceros.Designer.cs">
+      <DependentUpon>XtraModuloTerceros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartera\Ventas\XtraSesion.Designer.cs">
+      <DependentUpon>XtraSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraModificarRecaudos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraModificarRecaudos.Designer.cs">
+      <DependentUpon>XtraModificarRecaudos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cartera\Proyectos\XtraModuloInmuebles.resx">
+      <DependentUpon>XtraModuloInmuebles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\RptAdjudicacion.resx">
+      <DependentUpon>RptAdjudicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\RptComision.resx">
+      <DependentUpon>RptComision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\RptOtrosi.resx">
+      <DependentUpon>RptOtrosi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\RptEstadoCuenta.resx">
+      <DependentUpon>RptEstadoCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\RptReciboCaja.resx">
+      <DependentUpon>RptReciboCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserAdjudicacion.resx">
+      <DependentUpon>UserAdjudicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GrillaCapital.resx">
+      <DependentUpon>GrillaCapital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GrillaControl.resx">
+      <DependentUpon>GrillaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GrillaCuota.resx">
+      <DependentUpon>GrillaCuota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoogleDriveFiles\Ppruebas.resx">
+      <DependentUpon>Ppruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\MenuGeneral\XtraMenuGeneral.resx">
+      <DependentUpon>XtraMenuGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\ModuloXtraFactores.resx">
+      <DependentUpon>ModuloXtraFactores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\XtraFactores.resx">
+      <DependentUpon>XtraFactores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\MenuGeneral\XtraLogin.resx">
+      <DependentUpon>XtraLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Configuracion\XtraTerceros.resx">
+      <DependentUpon>XtraTerceros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Configuracion\XtraModuloEmpresas.resx">
+      <DependentUpon>XtraModuloEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Configuracion\XtraModuloUsuarios.resx">
+      <DependentUpon>XtraModuloUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Configuracion\XtraUsuarios.resx">
+      <DependentUpon>XtraUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Configuracion\XtraEmpresas.resx">
+      <DependentUpon>XtraEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Configuracion\XtraModuloRoles.resx">
+      <DependentUpon>XtraModuloRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Configuracion\XtraUsuarioProyectos.resx">
+      <DependentUpon>XtraUsuarioProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Configuracion\XtraReasignarClaves.resx">
+      <DependentUpon>XtraReasignarClaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Configuracion\XtraRoles.resx">
+      <DependentUpon>XtraRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Proyectos\XtraInmuebles.resx">
+      <DependentUpon>XtraInmuebles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\RptSimulador.resx">
+      <DependentUpon>RptSimulador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\XtraRptSimulador.resx">
+      <DependentUpon>XtraRptSimulador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Proyectos\XtraSimulador.resx">
+      <DependentUpon>XtraSimulador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Ventas\XtraModuloReservas.resx">
+      <DependentUpon>XtraModuloReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Ventas\XtraReservas.resx">
+      <DependentUpon>XtraReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\MenuGeneral\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserAsesores.resx">
+      <DependentUpon>UserAsesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Ventas\XtraAdjudicacion.resx">
+      <DependentUpon>XtraAdjudicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoogleDriveFiles\XtraWeb.resx">
+      <DependentUpon>XtraWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoogleDriveFiles\XtraDocx.resx">
+      <DependentUpon>XtraDocx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoogleDriveFiles\XtraImagen.resx">
+      <DependentUpon>XtraImagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoogleDriveFiles\XtraPdf.resx">
+      <DependentUpon>XtraPdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\XtraRptAdjudicacion.resx">
+      <DependentUpon>XtraRptAdjudicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Ventas\XtraModuloRadicacion.resx">
+      <DependentUpon>XtraModuloRadicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Ventas\XtraRadicacion.resx">
+      <DependentUpon>XtraRadicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\XtraRptComision.resx">
+      <DependentUpon>XtraRptComision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Ventas\XtraModuloOtrosi.resx">
+      <DependentUpon>XtraModuloOtrosi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Ventas\XtraOtrosi.resx">
+      <DependentUpon>XtraOtrosi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Recaudos\XtraFuentePago.resx">
+      <DependentUpon>XtraFuentePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Recaudos\XtraModuloRecaudosVigentes.resx">
+      <DependentUpon>XtraModuloRecaudosVigentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Recaudos\XtraRecaudos.resx">
+      <DependentUpon>XtraRecaudos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\XtraRptOtrosi.resx">
+      <DependentUpon>XtraRptOtrosi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Proyectos\XtraCalculoCuotas.resx">
+      <DependentUpon>XtraCalculoCuotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserDatosClientes.resx">
+      <DependentUpon>UserDatosClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Recaudos\XtraRecaudoDetallado.resx">
+      <DependentUpon>XtraRecaudoDetallado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\XtraRptEstadoCuenta.resx">
+      <DependentUpon>XtraRptEstadoCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Recaudos\XtraModuloRecaudoJuridico.resx">
+      <DependentUpon>XtraModuloRecaudoJuridico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Recaudos\XtraRcdJuridico.resx">
+      <DependentUpon>XtraRcdJuridico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Recaudos\XtraRcdNoRadicado.resx">
+      <DependentUpon>XtraRcdNoRadicado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Recaudos\XtraRecaudoFecha.resx">
+      <DependentUpon>XtraRecaudoFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Reportes\XtraRptReciboCaja.resx">
+      <DependentUpon>XtraRptReciboCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comisiones\XtraAnticiposPendientes.resx">
+      <DependentUpon>XtraAnticiposPendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comisiones\XtraComisionesPendientes.resx">
+      <DependentUpon>XtraComisionesPendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comisiones\XtraConfigAnticipos.resx">
+      <DependentUpon>XtraConfigAnticipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comisiones\XtraPagoAnticipos.resx">
+      <DependentUpon>XtraPagoAnticipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comisiones\XtraPagoComision.resx">
+      <DependentUpon>XtraPagoComision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presupuesto\XtraAddPresupuesto.resx">
+      <DependentUpon>XtraAddPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presupuesto\XtraRangoCartera.resx">
+      <DependentUpon>XtraRangoCartera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presupuesto\XtraSeguimientoCliente.resx">
+      <DependentUpon>XtraSeguimientoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presupuesto\XtraSeguimientoPresupuesto.resx">
+      <DependentUpon>XtraSeguimientoPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presupuesto\XtraCnsSeguimientos.resx">
+      <DependentUpon>XtraCnsSeguimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presupuesto\XtraCnsPresupuestoPeriodo.resx">
+      <DependentUpon>XtraCnsPresupuestoPeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comisiones\XtraCnsComisionFecha.resx">
+      <DependentUpon>XtraCnsComisionFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comisiones\XtraCnsComisionGestor.resx">
+      <DependentUpon>XtraCnsComisionGestor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Recaudos\XtraCnsRecaudoJuridico.resx">
+      <DependentUpon>XtraCnsRecaudoJuridico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Recaudos\XtraCnsRecaudoNoRadicados.resx">
+      <DependentUpon>XtraCnsRecaudoNoRadicados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentacion\XtraPagados.resx">
+      <DependentUpon>XtraPagados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentacion\XtraDocumentacion.resx">
+      <DependentUpon>XtraDocumentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentacion\XtraArchivados.resx">
+      <DependentUpon>XtraArchivados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentacion\XtraEscriturados.resx">
+      <DependentUpon>XtraEscriturados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentacion\XtraTramiteEscritura.resx">
+      <DependentUpon>XtraTramiteEscritura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentacion\XtraAceptarDocumento.resx">
+      <DependentUpon>XtraAceptarDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Ventas\XtraModuloAdjudicaciones.resx">
+      <DependentUpon>XtraModuloAdjudicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\XtraModuloOficina.resx">
+      <DependentUpon>XtraModuloOficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\XtraOficina.resx">
+      <DependentUpon>XtraOficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Ventas\XtraModuloSesion.resx">
+      <DependentUpon>XtraModuloSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Configuracion\XtraModuloTerceros.resx">
+      <DependentUpon>XtraModuloTerceros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartera\Ventas\XtraSesion.resx">
+      <DependentUpon>XtraSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraModificarRecaudos.resx">
+      <DependentUpon>XtraModificarRecaudos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>Administracion\Resources\.editorconfig</Link>
+    </None>
+    <None Include="Administracion\MenuGeneral\packages.config" />
+    <None Include="Administracion\packages.config" />
+    <None Include="Administracion\Resources\packages.config" />
+    <None Include="app.config" />
+    <None Include="client_secre.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SpControlTotal_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Administracion\Resources\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Administracion\MenuGeneral\Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administracion\Resources\Menu General.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Administracion\Administracion.csproj">
+      <Project>{39d9a3b9-6f54-4066-9d75-44763d8fe650}</Project>
+      <Name>Administracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cartera\Cartera.csproj">
+      <Project>{fb219e09-5674-41c7-a39c-49c8074a3974}</Project>
+      <Name>Cartera</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

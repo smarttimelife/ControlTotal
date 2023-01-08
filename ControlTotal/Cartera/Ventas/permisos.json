@@ -1,0 +1,350 @@
+[
+  {
+    "Modulo": "Clientes",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Asesores",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Proyectos",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Stand",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Proyecto Asesor",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Usuario Proyecto",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Eventos",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Estado Civil",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Operadores",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Proyecto Operador",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Proyecto Stand",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  },
+  {
+    "Modulo": "Usuario",
+    "ListAcciones": [
+      {
+        "Accion": "Adicionar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Modificar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Eliminar",
+        "Permiso": true
+      },
+      {
+        "Accion": "Imprimir",
+        "Permiso": true
+      },
+      {
+        "Accion": "Excel",
+        "Permiso": true
+      },
+      {
+        "Accion": "Pdf",
+        "Permiso": true
+      }
+    ]
+  }
+]
